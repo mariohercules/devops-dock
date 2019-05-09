@@ -1,0 +1,22 @@
+version: '3'
+
+networks:
+  frontend:
+    driver: ${NETWORKS_DRIVER}
+  backend:
+    driver: ${NETWORKS_DRIVER}
+
+volumes:
+  jenkins:
+    driver: ${VOLUMES_DRIVER}
+
+services:
+  jenkins:
+    build:
+      context: ./jenkins
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    networks:
+      - frontend
+      - backend
