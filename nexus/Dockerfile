@@ -1,0 +1,1 @@
+FROM sonatype/nexus3

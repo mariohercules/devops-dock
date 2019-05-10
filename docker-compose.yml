@@ -12,6 +12,7 @@ volumes:
 
 services:
   jenkins:
+    container_name: jenkins
     build:
       context: ./jenkins
     environment:
@@ -24,3 +25,12 @@ services:
     networks:
       - frontend
       - backend
+  nexus:
+    container_name: nexus
+    build:
+      context: ./nexus
+    ports:
+      - '8081:8081'
+    networks:
+      - frontend
+      - backend      
