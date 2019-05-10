@@ -7,5 +7,17 @@ Docker DevOps development environment
 ```
 $ cp .env-example .env
 $ docker-compose build
-$ docker-compose up
+$ docker-compose up 
 ```
+
+### JENKINS
+
+* Get jenkins initial password for setup
+
+```
+$ docker cp jenkins:/var/jenkins_home/secrets/initialAdminPassword ./
+```
+
+### NEXUS
+
+* Default credentials are: admin / admin123
