@@ -20,12 +20,12 @@ $ docker cp jenkins:/var/jenkins_home/secrets/initialAdminPassword ./
 
 ### NEXUS
 
-* Artefacts repositoy
+* Artefacts repository
 
-* Default credentials are: admin / admin123
+Default credentials are: admin / admin123
 
 ### SONARQUBE
 
 * Code Quality
 
-* Default credentials are: admin / admin
+Default credentials are: admin / admin
