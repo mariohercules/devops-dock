@@ -34,3 +34,12 @@ services:
     networks:
       - frontend
       - backend      
+  sonarqube:
+    container_name: sonarqube
+    build:
+      context: ./sonarqube
+    ports:
+      - '9000:9000'
+    networks:
+      - frontend
+      - backend         
