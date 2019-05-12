@@ -73,5 +73,16 @@ services:
     ports:
     - '3000:3000'
     networks:
-      - frontend          
+      - frontend 
+  teamcity:
+    container_name: teamcity
+    domainname: teamcity.localhost
+    hostname: teamcity
+    ipc: host    
+    build:
+      context: ./teamcity
+    ports:
+    - '8111:8111'
+    networks:
+      - frontend                
                  
