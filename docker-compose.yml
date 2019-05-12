@@ -13,6 +13,9 @@ volumes:
 services:
   jenkins:
     container_name: jenkins
+    domainname: jenkins.localhost
+    hostname: jenkins
+    ipc: host
     build:
       context: ./jenkins
     environment:
@@ -27,6 +30,9 @@ services:
       - backend
   nexus:
     container_name: nexus
+    domainname: nexus.localhost
+    hostname: nexus
+    ipc: host    
     build:
       context: ./nexus
     ports:
@@ -36,10 +42,36 @@ services:
       - backend      
   sonarqube:
     container_name: sonarqube
+    domainname: sonarqube.localhost
+    hostname: sonarqube
+    ipc: host    
     build:
       context: ./sonarqube
     ports:
       - '9000:9000'
     networks:
       - frontend
-      - backend         
+      - backend   
+  gitlab:
+    container_name: gitlab
+    domainname: gitlab.localhost
+    hostname: gitlab
+    ipc: host    
+    build:
+      context: ./gitlab
+    ports:
+    - '80:80'
+    networks:
+      - frontend    
+  grafana:
+    container_name: grafana
+    domainname: grafana.localhost
+    hostname: grafana
+    ipc: host    
+    build:
+      context: ./grafana
+    ports:
+    - '3000:3000'
+    networks:
+      - frontend          
+                 
