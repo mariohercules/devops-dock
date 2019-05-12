@@ -4,10 +4,22 @@ Docker DevOps development environment
 
 ## USING
 
+Clone devops-dock inside your project:
+
+```
+$ git clone https://github.com/mariohercules/devops-dock.git
+```
+
+Enter the devops-dock folder and rename env-example to .env.
+
 ```
 $ cp .env-example .env
-$ docker-compose build
-$ docker-compose up gitlab jenkins grafana
+```
+
+Run your containers:
+
+```
+$ docker-compose up -d gitlab jenkins grafana
 ```
 
 ### JENKINS
