@@ -41,3 +41,9 @@ Default credential is: root
 * Code repository / build management and continuous integration server
 
 Default credential is: root 
+
+### GRAFANA
+
+* Analytics and monitoring
+
+Default credentials are: admin/ admin 
