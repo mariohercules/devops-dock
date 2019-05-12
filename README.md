@@ -29,3 +29,15 @@ Default credentials are: admin / admin123
 * Code Quality
 
 Default credentials are: admin / admin
+
+### GITLAB
+
+* Code repository / build management and continuous integration server
+
+Default credential is: root 
+
+### TEAMCITY
+
+* Code repository / build management and continuous integration server
+
+Default credential is: root 
