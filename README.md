@@ -7,7 +7,7 @@ Docker DevOps development environment
 ```
 $ cp .env-example .env
 $ docker-compose build
-$ docker-compose up 
+$ docker-compose up gitlab jenkins grafana
 ```
 
 ### JENKINS
