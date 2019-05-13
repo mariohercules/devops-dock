@@ -1,6 +1,6 @@
 # Devops-Dock
 
-Docker DevOps development environment
+DevOps dock development environment
 
 ## USING
 
